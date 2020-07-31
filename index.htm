@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div class="area">
+        <h1>To Do List</h1>
+        <div class="type-area">
+            <form>
+                <input type='text' id='note' placeholder="Type Here..." required onmousedown="clear_text()">
+                <button id='add_note'><i class="fas fa-plus-square"></i></button>
+                <select class= "choice">
+                    <option value="all">All</option>
+                    <option value="read">Read</option>
+                    <option value="unread">Unread</option>
+                </select>
+            </form>
+        </div> 
+        <div class="note_container">
+            <ul class="list">
+
+            </ul>
+        </div>
+    </div>
+    <div class="pagging">
+        <button>&laquo;</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button>&raquo;</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <script src='dom.js'></script>
+</body>
+
+</html>

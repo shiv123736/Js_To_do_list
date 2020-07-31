@@ -1,0 +1,149 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(120deg, orange, yellow);
+    color:white;
+}
+.area h1 {
+    text-align: center;
+    position: relative;
+    top:10vh;
+    min-height: 10vh;
+    margin-bottom: 15vh;
+}
+.type-area {
+    /* min-height: 10vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input {    
+    min-width: 50%;
+    position: relative;
+}
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: white;
+    border:none;
+}
+
+form button {
+    margin-left: -4px;
+    color: orange;
+    cursor:pointer;
+    transition: all 0.2s;
+}
+form button:hover {
+    color:white;
+    background-color: orange;
+}
+
+.note_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    list-style-type: none;
+    min-width: 30%;
+}
+.notes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color:black;
+    padding-left: 1rem;
+    margin: 0.5rem;
+    transition: all 0.5s ease;
+    transform-origin: top left;
+
+}
+.notes li {
+    flex: 1;
+}
+.read-btn,
+.del-btn {
+    background-color: red;
+    border:none;
+    cursor: pointer;
+    padding: 1rem;
+    color:white;
+    border-radius: 0px;
+    font-size: 1rem;
+}
+.read-btn {
+    background-color: green;
+}
+.del-btn {
+    background-color: red;
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+.read {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.fall {
+    position: relative;
+    /* transform-origin: center; */
+    transform: rotateZ(40deg) translateY(8rem);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: white;
+    border:none;
+    position: relative;
+    overflow: hidden;
+    width: 5rem;
+    color:orange;
+}
+select::after {
+    content: "\25BC";
+    color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pagging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagging button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 2px;
+    border: none;
+    color: orange;
+    cursor:pointer;
+    transition: all 0.2s;
+}
+.pagging button.active {
+    background-color: orange;
+    color: white;
+}
+.pagging button:hover:not(.active) {background-color: #ddd;}
